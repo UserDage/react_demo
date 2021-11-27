@@ -1,0 +1,9 @@
+.MyInfo {
+  background-color: white;
+  border-radius: 0.3125rem;
+}
+.MyInfoHeader {
+  display: inline-block;
+  height: 8%;
+  line-height: 2.8;
+}
