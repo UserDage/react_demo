@@ -6,9 +6,8 @@ import './App.css'
 import Aside from './components/Aside';
 import image from './image/鸟.png'
 import MyInfo from './pages/MyInfo';
-
-const { Header, Content, Sider } = Layout
-//const { SubMenu } = Menu
+import Headers from './components/Header';
+const { Content, Sider } = Layout
 class App extends Component {
   render() {
     return (
@@ -19,10 +18,11 @@ class App extends Component {
           <Aside></Aside>
         </Sider>
         <Layout>
-          <Header className='Header'>Header</Header>
+          <Headers></Headers>
           <Divider style={{ margin: '0 0 15px 0' }}></Divider>
           <Content className='Content'>
             <Routes>
+              <Route path='/' element={<MyInfo />}></Route>
               <Route path='/MyInfo' element={<MyInfo />}></Route>
             </Routes>
           </Content>

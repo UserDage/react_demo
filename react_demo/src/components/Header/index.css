@@ -1,4 +1,8 @@
 .Header {
-  background-color: white;
+  color: white !important;
   height: 10%;
+  width: 100%;
+}
+.Header div {
+  float: right;
 }

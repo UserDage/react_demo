@@ -1,9 +1,38 @@
 .MyInfo {
   background-color: white;
   border-radius: 0.3125rem;
+  font-size: 15px;
 }
 .MyInfoHeader {
   display: inline-block;
+  margin-left: 1%;
   height: 8%;
-  line-height: 2.8;
+  line-height: 3;
+}
+.MyInfoMain {
+  height: 75%;
+  width: 100%;
+  float: left;
+}
+.MyInfoMain div {
+  float: left;
+}
+.headPic {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userInfo {
+  width: 68%;
+  height: auto;
+  margin-left: 2%;
+}
+.userInfo div {
+  clear: both;
+  margin-top: 1.25rem;
+}
+.userInfo span {
+  color: #909399;
 }
