@@ -22,7 +22,7 @@ class App extends Component {
           <Divider style={{ margin: '0 0 15px 0' }}></Divider>
           <Content className='Content'>
             <Routes>
-              <Route path='/' element={<MyInfo />}></Route>
+              {/* <Route path='/' element={<MyInfo />}></Route> */}
               <Route path='/MyInfo' element={<MyInfo />}></Route>
             </Routes>
           </Content>

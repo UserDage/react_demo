@@ -32,45 +32,46 @@ class MyInfo extends Component {
                         this.state.userInfo.map((data) => {
                             return (
                                 <div className='userInfo' key={data.id}>
-                                    <table>
-                                        <ul>
-                                            <li>
-                                                <div style={{ marginTop: '-0.13rem' }}><b>信息</b></div>
+                                    <div className='info'>
+                                        <table>
+                                            <thead>
+                                            </thead>
+                                            <tbody>
+                                                <ul>
+                                                    <li>
+                                                        <b>信息</b>
+                                                    </li>
+                                                </ul>
                                                 <tr>
-                                                    <td>
-                                                        <span>姓名：</span>
-                                                    </td>
-                                                    <td>
-                                                        <Input style={{ width: 'auto' }} defaultValue={data.login}></Input>
-                                                    </td>
+                                                    <td><span>姓名：</span></td>
+                                                    <td><Input style={{ width: 'auto' }} defaultValue={data.login}></Input></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
-                                                        <span>GitHub地址：</span>
-                                                    </td>
-                                                    <td>
-                                                        <Input style={{ width: 'auto' }} defaultValue={data.html_url}></Input>
-                                                    </td>
+                                                    <td><span>GitHub地址：</span></td>
+                                                    <td><Input style={{ width: 'auto' }} defaultValue={data.html_url}></Input></td>
                                                 </tr>
-
-                                            </li>
-                                        </ul>
-                                        <ul style={{ display: 'block', marginTop: '10rem' }}>
-                                            <li>
-                                                <div style={{ marginTop: '-0.13rem' }}><b>用户类型</b></div>
+                                            </tbody>
+                                        </table>
+                                        <table>
+                                            <thead>
+                                            </thead>
+                                            <tbody>
+                                                <ul style={{ marginTop: '5rem' }}>
+                                                    <li>
+                                                        <b>用户类型</b>
+                                                    </li>
+                                                </ul>
                                                 <tr>
                                                     <td><span>是否为站点管理员：</span></td>
                                                     <td><Input style={{ width: 'auto' }} defaultValue={data.site_admin ? "是" : "否"}></Input></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><span>用户类型：</span></td>
-                                                    <td><Input style={{ width: 'auto' }} defaultValue={data.type}></Input></td>
+                                                    <td> <span>用户类型：</span></td>
+                                                    <td> <Input style={{ width: 'auto' }} defaultValue={data.type}></Input></td>
                                                 </tr>
-
-                                            </li>
-                                        </ul>
-                                    </table>
-
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             )
                         })

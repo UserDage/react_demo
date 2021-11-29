@@ -12,7 +12,6 @@
 .MyInfoMain {
   height: 75%;
   width: 100%;
-  float: left;
 }
 .MyInfoMain div {
   float: left;
@@ -28,11 +27,18 @@
   width: 68%;
   height: auto;
   margin-left: 2%;
+  clear: right;
+  margin-top: 2%;
 }
-.userInfo div {
-  clear: both;
-  margin-top: 1.25rem;
+.userinfo div {
+  float: none !important;
 }
 .userInfo span {
   color: #909399;
+}
+.info td {
+  height: 2.875rem;
+}
+ul li {
+  margin-left: -1.3rem;
 }
